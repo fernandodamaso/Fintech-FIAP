@@ -1,0 +1,577 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+* {
+  box-sizing: border-box !important;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+body {
+  background-color: #f8f8f8 !important;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  body {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  body .wrap {
+    padding-bottom: 85px
+  }
+
+}
+
+.bg-verde {
+  background: #008773 !important;
+}
+
+.round-border {
+  border-radius: 10px !important;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.box .titulo {
+  color: #3a3d3c;
+  font-family: Montserrat;
+  font-size: 17px;
+
+  font-weight: 700;
+}
+header {
+  background: linear-gradient(91deg, #008773 0.14%, #24a57f 99.86%);
+}
+
+header h1 {
+  font-family: Montserrat;
+  font-size: 21px;
+
+  font-weight: 700;
+
+  margin: 0;
+}
+
+header .dropdown-toggle {
+  background: rgba(0, 106, 91, 0.8);
+  position: absolute;
+  top: -6px;
+  left: 0;
+  display: none;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.aside {
+  display: flex;
+  padding: 26px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  background: linear-gradient(91deg, #008773 0.14%, #24a57f 99.86%);
+  height: calc(100vh - 57px);
+  overflow: hidden;
+  max-width: 310px !important;
+}
+
+.aside h2 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 29px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+.aside nav,
+.navbarNav {
+  display: block;
+  width: 100%;
+}
+.aside nav li {
+  border-bottom: 2px solid rgb(255 255 255 / 12%);
+}
+.aside nav a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+
+  font-weight: 400;
+
+  padding: 13px 0;
+}
+
+.aside .minha-conta {
+  background: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px 20px;
+  align-items: center;
+  width: 100% !important;
+  gap: 20px;
+}
+
+.aside .minha-conta .foto {
+  padding-right: 0;
+}
+
+.aside .minha-conta .foto img {
+}
+
+.aside .minha-conta .dados {
+  padding-left: 0;
+  padding-top: 14px;
+}
+
+.aside .minha-conta .dados .nome {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+
+.aside .minha-conta .dados .conta {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+
+  font-weight: 400;
+}
+
+.cardWrap {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .cardWrap {
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .cardWrap .cartao {
+    width: 304px;
+    height: 197px;
+    float: left;
+    top: 0;
+    position: absolute;
+    left: 320px;
+  }
+  .cardWrap .cartao.active {
+    position: absolute;
+    left: 0;
+  }
+}
+.cardWrap .cartao {
+  position: relative;
+  cursor: pointer;
+}
+
+.cardWrap .cartao p {
+  margin: 0;
+}
+
+.cardWrap .cartao .bandeira {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.cardWrap .cartao .data {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  top: 14px;
+  right: 15px;
+}
+.cardWrap .cartao .numero {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(0, -50%);
+}
+.cardWrap .cartao .numero img {
+  display: inline-block;
+}
+.cardWrap .cartao .saldoWrap {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.cardWrap .cartao .saldoWrap .simples {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+}
+.cardWrap .cartao .saldoWrap .valor {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cardWrap .cartao {
+  flex: 1;
+  background: url(../img/cartao.png);
+  background-size: 100% 100%;
+  width: 304px;
+  height: 197px;
+  opacity: 0.2;
+}
+
+.cardWrap .cartao.active {
+  opacity: 1;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.content {
+  background: #f8f8f8;
+}
+.content .botoes {
+}
+.content .cartoes-botoes {
+  @media (max-width: 1400px) {
+    display: flex;
+    gap: 10px !important;
+  }
+}
+.content .botoes a {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex !important;
+  padding: 21px 18px !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+@media (max-width: 768px) {
+  .content .botoes a {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cartoes-botoes {
+    padding: 0 15px !important;
+  }
+}
+@media (max-width: 1400px) {
+  .content .botoes {
+    flex-direction: row !important;
+  }
+}
+.content .botoes a p {
+  margin: 0;
+  color: #3a3d3c;
+}
+
+.content .graficoWrap {
+  max-width: 1330px;
+}
+@media (max-width: 768px) {
+  .content .graficoWrap {
+    flex-direction: column;
+  }
+}
+.content .graficoWrap img {
+  width: 100%;
+}
+
+footer {
+  border-top: 2px solid #ededed;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: flex-end;
+  display: none;
+}
+footer .container-fluid {
+  justify-content: center !important;
+}
+footer .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer ul {
+}
+footer ul li {
+}
+footer ul li a {
+}
+@media (max-width: 1200px) {
+  .aside {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  header .dropdown-toggle {
+    display: block;
+  }
+
+  footer {
+    display: block;
+  }
+}
